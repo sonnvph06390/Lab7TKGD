@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bai3">
+    <View
+        android:id="@+id/topLeft"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:background="#FF9900"
+        app:layout_heightPercent="50%"
+        app:layout_widthPercent="50%"/>
+    <View
+        android:id="@+id/topRight1"
+        android:layout_toRightOf="@+id/topLeft"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:background="#FF66CC"
+        app:layout_heightPercent="20%"
+        app:layout_widthPercent="50%"/>
+    <View
+        android:layout_toRightOf="@+id/topLeft"
+        android:layout_below="@+id/topRight1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#3399CC"
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="30%"/>
+    <View
+        android:layout_below="@id/topLeft"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#006600"
+        app:layout_heightPercent="50%"
+        app:layout_widthPercent="100%"/>
+
+</android.support.percent.PercentRelativeLayout>
